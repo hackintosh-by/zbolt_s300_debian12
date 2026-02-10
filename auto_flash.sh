@@ -3,7 +3,7 @@
 
 # --- НАСТРОЙКИ ---
 # Путь к образу. Скрипт ищет его СНАЧАЛА на USB, ЗАТЕМ на самой SD-карте.
-IMAGE_NAME="rockpi-master.img.xz"
+IMAGE_NAME="image.img.xz"
 LOG_FILE="/var/log/flash_emmc.log"
 
 # Индикация светодиодом (Heartbeat по умолчанию на Rock Pi)

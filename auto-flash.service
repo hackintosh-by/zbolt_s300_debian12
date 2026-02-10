@@ -1,0 +1,12 @@
+#create file /etc/systemd/system/auto-flash.service
+[Unit]
+Description=Auto Flash eMMC Script
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/root/flash_auto.sh
+StandardOutput=journal+console
+
+[Install]
+WantedBy=multi-user.target

@@ -16,3 +16,6 @@ sudo nano /etc/systemd/system/auto-flash.service
 sudo systemctl enable auto-flash.service
 
 Создайте файл /etc/systemd/system/auto-flash.service
+sudo systemctl daemon-reload
+sudo systemctl enable auto-flash.service
+

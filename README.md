@@ -10,6 +10,9 @@ sudo ./flash_emmc.sh
 ---
 
 Для автоматизации создать сервис
+sudo nano /etc/systemd/system/auto-flash.service
+
+активировать
 sudo systemctl enable auto-flash.service
 
 Создайте файл /etc/systemd/system/auto-flash.service

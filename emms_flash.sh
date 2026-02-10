@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # --- НАСТРОЙКИ ---
-IMAGE_PATH="/home/rock/rockpi-debian.img.xz"
+IMAGE_PATH="/home/rock/image.img.xz"
 # -----------------
 
 # Проверка запуска от root

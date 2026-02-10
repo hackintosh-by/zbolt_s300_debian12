@@ -6,3 +6,10 @@ chmod +x flash_emmc.sh
 
 3. Выполнить скрипт
 sudo ./flash_emmc.sh
+
+---
+
+Для автоматизации создать сервис
+sudo systemctl enable auto-flash.service
+
+Создайте файл /etc/systemd/system/auto-flash.service

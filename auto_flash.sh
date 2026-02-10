@@ -71,8 +71,16 @@ for usb_part in /dev/sd*1; do
 done
 
 # B. Если на USB нет, ищем на самой SD карте (в /root или /home/rock)
+# B. Если на USB нет, ищем на самой SD карте
 if [ -z "$IMAGE_PATH" ]; then
-    if [ -f "/root/$IMAGE_NAME" ]; then
+    # Проверяем вашу папку (Downloads обычно с большой буквы!)
+    if [ -f "/home/radxa/Downloads/$IMAGE_NAME" ]; then
+         IMAGE_PATH="/home/radxa/Downloads/$IMAGE_NAME"
+    # Проверяем если вдруг папка с маленькой буквы (downloads)
+    elif [ -f "/home/radxa/downloads/$IMAGE_NAME" ]; then
+         IMAGE_PATH="/home/radxa/downloads/$IMAGE_NAME"
+    # Стандартные пути
+    elif [ -f "/root/$IMAGE_NAME" ]; then
         IMAGE_PATH="/root/$IMAGE_NAME"
     elif [ -f "/home/rock/$IMAGE_NAME" ]; then
         IMAGE_PATH="/home/rock/$IMAGE_NAME"
